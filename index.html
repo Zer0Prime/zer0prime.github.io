@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-
-  </head> 
+<head>
+  <title>&lt;model-viewer&gt; Augmented Reality</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+</head>
 <body>
 
-    <model-viewer src="Astronaut.glb"
-                  alt="A 3D model of an astronaut"
-                  background-color="#70BCD1"
-                  shadow-intensity="1"
-                  camera-controls
-                  interaction-prompt="auto"
-                  auto-rotate ar magic-leap>
-    </model-viewer>
+<model-viewer src="assets/Astronaut.glb" ar camera-controls alt="A 3D model of an astronaut" background-color="#222" ios-src="assets/Astronaut.usdz" magic-leap unstable-webxr></model-viewer>
+
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
 </body>
 </html>
